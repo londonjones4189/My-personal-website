@@ -1,9 +1,13 @@
 import ResumeFilter from "./ResumeFilter"
+import SideBar from "./SideBar"
 
 function App() {
   
   return (
-  <ResumeFilter/>
+  <>
+    <SideBar/> 
+    <ResumeFilter/>
+  </>
   )
 }
 
