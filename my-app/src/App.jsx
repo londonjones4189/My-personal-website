@@ -7,6 +7,7 @@ import ResumeFilter from "./ResumeFilter";
 import Developer from "./Developer";
 import Writer from "./Writer";
 import Designer from "./Designer";
+import Ttl from "./Ttl";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <AboutMe />
               <Versions />
               <ResumeFilter />
+              <Ttl />
             </>
           } />
           <Route path="/Developer" element={<Developer />} />

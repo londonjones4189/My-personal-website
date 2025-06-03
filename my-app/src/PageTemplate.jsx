@@ -1,6 +1,9 @@
 
 //want to have header (keep in mind there is a sidebar so it doesnt go over this)
 //undereath the header a lsit of cards
+
+import Card from "./Card"; // Import the Card component
+
 function PageTemplate(header, cards){ 
     return(
         <div> 

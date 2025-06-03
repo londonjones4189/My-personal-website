@@ -1,7 +1,18 @@
-//import PageTemplates from "./PageTemplates";
+import PageTemplate from "./PageTemplate";
+import PlaceHolder from "./assets/headshot.jpeg"; // Placeholder image for the project
 
-function Developer(){ 
-    console.log("Developer page loaded");
-    return(<h1>This page is not null, developer</h1>)
+function Developer() {
+  console.log("Developer page loaded");
+
+  const cardsData = [
+    {
+      image: PlaceHolder,
+      header: "Project 1",
+      description: "This is a description of project 1"
+    }
+  ];
+
+  return PageTemplate("Hello this is my software portfolio", cardsData);
 }
+
 export default Developer;
