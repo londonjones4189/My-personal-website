@@ -1,12 +1,10 @@
-import PageTemplate from "./PageTemplate";
-import PlaceHolder from "./assets/headshot.jpeg"; // Placeholder image for the project
+import PageTemplate from "./PageTemplate";t
 
 function Developer() {
   console.log("Developer page loaded");
 
   const cardsData = [
     {
-      image: PlaceHolder,
       header: "Project 1",
       description: "This is a description of project 1"
     }

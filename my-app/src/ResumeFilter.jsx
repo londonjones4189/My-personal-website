@@ -1,8 +1,6 @@
 import { experiences } from "./experiences";
 import { useState } from "react";
-import PaintBrushIcon from "./assets/paint-brush.png";
-import LaptopIcon from "./assets/labtop.png";
-import BookIcon from "./assets/book.png";
+
 
 //Resume Filters based on selected icon coridnated to expertise(
 //labtop -> developer , brush -> designer, book -> writer)
@@ -18,6 +16,7 @@ function ResumeFilter() {
     : experiences.filter((experience) => experience.tags.includes(filter));
 
   return (
+  /*
     <div className="resume-filter">
       <div className="resume-filter__button">
         <button onClick={() => setFilter("Paint-brush")}>
@@ -45,9 +44,14 @@ function ResumeFilter() {
             </ul>
           </div>
         ))}
+        
       </div>
     </div>
   );
+  */
+
+  <></>
+  )
 }
 
 export default ResumeFilter;

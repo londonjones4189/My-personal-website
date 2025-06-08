@@ -1,9 +1,20 @@
 
+import React from 'react';
+import AboutMe from './AboutMe';
+
+function App() {
+  return (
+    <div className="min-h-screen flex items-center justify-center p-8 bg-white text-black">
+      <AboutMe />
+    </div>
+  );
+}
+
+export default App;
+
+/*
 import { Routes, Route } from "react-router-dom";
 import SideBar from "./SideBar";
-import AboutMe from "./AboutMe";
-import Versions from "./Versions";
-import ResumeFilter from "./ResumeFilter";
 import Developer from "./Developer";
 import Writer from "./Writer";
 import Designer from "./Designer";
@@ -20,6 +31,7 @@ function App() {
               <AboutMe />
               <Versions />
               <ResumeFilter />
+        
               <Ttl />
             </>
           } />
@@ -33,3 +45,4 @@ function App() {
 }
 
 export default App;
+*/
