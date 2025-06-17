@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import './fonts.css'; 
 
 function AboutMe() {
   const roles = ['Developer', 'Writer', 'Designer', 'Creative'];
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Inject Google Fonts link dynamically once
-  useEffect(() => {
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Lobster&family=Space+Grotesk:wght@400;700&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,15 +14,6 @@ function AboutMe() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 md:px-8 lg:px-12 py-6">
-      <style>{`
-        .font-space-grotesk {
-          font-family: 'Space Grotesk', sans-serif;
-        }
-        .font-lobster {
-          font-family: 'Lobster', cursive;
-        }
-      `}</style>
-      
       <h1 className="text-[36px] font-bold font-space-grotesk text-[#2E7C67] text-center">
         Hello everyone, my name is London and I am a{' '}
         <span className="text-[50px] font-lobster text-[#D4A5A5]">
