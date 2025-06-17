@@ -16,11 +16,12 @@ function ResumeFilter() {
     : experiences.filter((experience) => experience.tags.includes(filter));
 
   return (
-  /*
     <div className="resume-filter">
       <div className="resume-filter__button">
         <button onClick={() => setFilter("Paint-brush")}>
-            <img src={PaintBrushIcon} alt="Designer" style={{ width: 24, height: 24 }}/>
+            <h1>👩🏾‍🎨
+woman artist
+Unicode: U+1F469 U+1F3FE U+200D U+1F3A8, UTF-8: F0 9F 91 A9 F0 9F 8F BE E2 80 8D F0 9F 8E A8 </h1>
         </button>
         <button onClick={() => setFilter("Labtop")}>
             <img src={LaptopIcon} alt="Developer" style={{ width: 24, height: 24 }}/>
@@ -48,10 +49,6 @@ function ResumeFilter() {
       </div>
     </div>
   );
-  */
-
-  <></>
-  )
 }
 
 export default ResumeFilter;
