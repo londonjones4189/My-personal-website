@@ -37,12 +37,7 @@ function Portfolios() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 md:px-8 lg:px-12 py-6">
-      <h1 className="text-[36px] font-bold font-space-grotesk text-[#D4A5A5] text-center">
-        Portfolios
-      </h1>
-      <h2 className="text-2xl font-bold font-space-grotesk text-[#2E7C67] text-center">
-        Pick your poison
-      </h2>
+      
       <div className="w-full text-white px-6 py-8 shadow-md">
         <div className="flex items-center justify-center max-w-6xl mx-auto">
           {/* Left Arrow */}

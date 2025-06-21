@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { truths, lies } from './truthslies';
+import './fonts.css'; 
 
 function getRandomElements(arr, count) {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());
@@ -42,8 +43,8 @@ function Ttl() {
 
   return (
     <div className="flex flex-col gap-4 p-6 bg-white rounded-xl shadow-md max-w-md mx-auto text-center">
-      <h3 className="text-2xl font-bold">Two Truths and a Lie</h3>
-      <h2 className="text-lg text-gray-600">Click on the lie to win</h2>
+      <h3 className="text-[36px] font-bold font-space-grotesk text-[#D4A5A5] text-center">Two Truths and a Lie</h3>
+      <h2 className="text-2xl font-bold font-space-grotesk text-[#2E7C67] text-center">Click on the lie to win</h2>
       <div className="flex flex-col gap-2">
         {options.map((option, index) => (
           <button
@@ -51,7 +52,7 @@ function Ttl() {
             onClick={() => handleClick(option)}
             disabled={selected !== null}
             className={`px-4 py-2 border rounded-lg transition 
-              ${selected === option.text ? 'bg-blue-200' : 'bg-gray-100 hover:bg-gray-200'}`}
+              ${selected === option.text ? 'bg-[#D4A5A5]' : 'bg-[#2E7C67]/17 hover:bg-gray-200'}`}
           >
             {option.text}
           </button>
