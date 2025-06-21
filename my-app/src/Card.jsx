@@ -1,16 +1,33 @@
-
-//Cards to be used on portfolio pages
-function Card({ image, header, description }) {
+function Card(props) {
   return (
-    <div className="flex w-72 h-72 border border-gray-300 rounded-lg overflow-hidden shadow-sm">
-      <div className="flex-1 overflow-hidden">
-        <img src={image} className="w-full h-full object-cover" />
+    <div className="flex w-full max-w-md h-40 border border-gray-300 rounded-lg overflow-hidden shadow-sm">
+      {/* Image on the left */}
+      <div className="flex-shrink-0 w-36 h-36 m-4 rounded-lg overflow-hidden">
+        <img src={props.image} alt={props.hl} className="w-full h-full object-cover" />
       </div>
-      <div className="flex-1 p-4 flex flex-col justify-center">
-        <h3 className="text-xl font-semibold mb-2">{header}</h3>
-        <p className="text-gray-600 text-base">{description}</p>
+
+      {/* Content on the right */}
+      <div className="flex flex-col justify-center flex-1 p-4">
+        {/* Header */}
+        <h3 className="text-2xl font-bold text-center mt-4 mb-2 text-[#D4A5A5]">{props.hl}</h3>
+
+        {/* Description */}
+        <p className="text-2xl font-bold text-center mt-4 mb-2 text-[#2E7C67]">{props.sh}</p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap justify-center gap-2 mt-2">
+          {props.tags && props.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-700"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
+
 export default Card;
