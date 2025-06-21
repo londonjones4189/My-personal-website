@@ -1,4 +1,9 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
 function Contact() {
+  const iconStyle = "text-[#D4A5A5] hover:text-pink-300 transition-colors duration-300";
+
   return (
     <div>
       <div className="contact-header">
@@ -6,8 +11,39 @@ function Contact() {
           Contact Me
         </h1>
         <h2 className="text-2xl font-bold font-space-grotesk text-[#2E7C67] text-center">
-          Thanks for getting to know me! I would love to get to know you.
+          Thanks for getting to know me! I would love to get to know you. Let's connect!
         </h2>
+
+        {/* Social Icons */}
+        <div className="flex justify-center space-x-6 mt-4">
+          {/* GitHub */}
+          <a 
+            href="https://github.com/londonjones4189" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          >
+            <FaGithub size={40} className={iconStyle} />
+          </a>
+
+          {/* LinkedIn */}
+          <a 
+            href="https://www.linkedin.com/in/london--jones/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+          >
+            <FaLinkedin size={40} className={iconStyle} />
+          </a>
+
+          {/* Email */}
+          <a 
+            href="mailto:londonjonez00@gmail.com" 
+            aria-label="Send Email"
+          >
+            <MdEmail size={40} className={iconStyle} />
+          </a>
+        </div>
       </div>
 
       <div className="Form-header mt-6">

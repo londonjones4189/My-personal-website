@@ -5,11 +5,10 @@ import Portfolios from './Portfolios';
 import Ttl from './Ttl';
 import ResumeFilter from './ResumeFilter';
 import Contact from './Contact';
-
-//threse are no in any seperate fu;ter
 import Developer from './Developer';
 import Written from './Written';
 import Design from './Design';
+import DeveloperDetail from './DeveloperDetail';
 
 function Home() {
   return (
@@ -41,6 +40,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Developer" element={<Developer />} />
+        <Route path="/Developer/:id" element={<DeveloperDetail />} />
         <Route path="/Written" element={<Written />} />
         <Route path="/Design" element={<Design />} />
         <Route path="*" element={<div>bug</div>} />

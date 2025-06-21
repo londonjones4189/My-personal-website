@@ -48,20 +48,25 @@ function Ttl() {
       <div className="flex flex-col gap-2">
         {options.map((option, index) => (
           <button
-            key={index}
-            onClick={() => handleClick(option)}
-            disabled={selected !== null}
-            className={`px-4 py-2 border rounded-lg transition 
-              ${selected === option.text ? 'bg-[#D4A5A5]' : 'bg-[#2E7C67]/17 hover:bg-gray-200'}`}
-          >
-            {option.text}
-          </button>
+          key={index}
+          onClick={() => handleClick(option)}
+          disabled={selected !== null}
+          className={`
+            px-4 py-2 border rounded-lg transition
+            text-white
+            ${selected === option.text
+              ? '!bg-[#D4A5A5] !border-[#D4A5A5]'
+              : '!bg-[#2E7C67] !border-[#2E7C67] !hover:bg-[#276353]'}
+          `}
+        >
+          {option.text}
+        </button>        
         ))}
       </div>
       {answer && <p className="mt-4 text-lg font-medium">{answer}</p>}
       <button
         onClick={setupGame}
-        className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+        className="mt-4 px-4 py-2 !bg-[#D4A5A5] !text-white rounded-lg"
       >
         Restart
       </button>
