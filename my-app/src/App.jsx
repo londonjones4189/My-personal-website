@@ -15,7 +15,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-white text-black flex flex-col scroll-smooth">
       <Header />
-      <main className="flex-1 px-8 mt-56">
+      <main className="flex-1 px-8 mt-0">
         <section id="AboutMe">
           <AboutMe />
         </section>

@@ -10,7 +10,7 @@ const closeMenu = () => setClick(false);
 
   return (
     //change it so there is no hover text just a pink line shows up under each word when hovered over and the text of ecah word is green
-    <div className="max-w-3xl mx-auto px-4 md:px-8 lg:px-12 py-6">
+    <div className="max-w-3xl mx-auto px-4 md:px-8 lg:px-12 py-0">
       <nav>
         <ul className="flex justify-center list-none w-full max-w-6xl mx-auto space-x-8">
           <li>
