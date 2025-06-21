@@ -28,11 +28,13 @@ function Developer() {
 
   return (
     <PortfolioTemp
-      title="Developer Portfolio"
-      subtitle="Thank you for visiting my portfolio!"
-      backLink="/Portfolios"
-      cardData={cardData}
-    />
+    title="Developer Portfolio"
+    subtitle="Thank you for visiting my portfolio!"
+    backLink="/Portfolios"
+    cardData={cardData}
+    type="Developer" 
+  />
+  
   );
 }
 

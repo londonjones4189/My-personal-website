@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
+import Card from './Card'; // make sure you import Card here!
 
-function PortfolioTemp({ title, subtitle, backLink, cardData }) {
+function PortfolioTemp({ title, subtitle, backLink, cardData, type }) {
   return (
     <div className="relative min-h-screen">
       {/* Back Button */}
@@ -44,6 +45,7 @@ function PortfolioTemp({ title, subtitle, backLink, cardData }) {
               hl={card.hl}
               sh={card.sh}
               tags={card.tags}
+              type={type} // pass type to Card
             />
           ))}
         </div>
