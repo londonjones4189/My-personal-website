@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Card from './Card'; // make sure you import Card here!
+import Card from './Card'; 
 
 function PortfolioTemp({ title, subtitle, backLink, cardData, type }) {
   return (

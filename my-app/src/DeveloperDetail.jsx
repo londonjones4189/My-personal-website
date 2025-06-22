@@ -13,3 +13,6 @@ function DeveloperDetail() {
 }
 
 export default DeveloperDetail;
+
+//i want to add the page functionality later but for now I want to have each card naviagte tp the github link
+//how would i do that
