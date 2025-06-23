@@ -14,16 +14,16 @@ const closeMenu = () => setClick(false);
       <nav>
         <ul className="flex justify-center list-none w-full max-w-6xl mx-auto space-x-8">
           <li>
-            <Link to="AboutMe" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Me</Link>
+            <Link to="AboutMe" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Me</Link>
           </li>
           <li>
-            <Link to="Portfolios" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Portfolios</Link>
+            <Link to="Portfolios" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Portfolios</Link>
           </li>
           <li>
-            <Link to="ResumeFilter" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Experience</Link>
+            <Link to="ResumeFilter" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Experience</Link>
           </li>
           <li>
-          <Link to="Contact" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Contact</Link>
+          <Link to="Contact" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu} className="!text-[#2E7C67] !font-bold !font-space-grotesk hover:border-b-2 hover:border-[#D4A5A5] pb-1 transition-all duration-200">Contact</Link>
           </li>
         </ul>
       </nav>

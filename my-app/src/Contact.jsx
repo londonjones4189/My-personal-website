@@ -11,7 +11,7 @@ function Contact() {
           Contact Me
         </h1>
         <h2 className="text-2xl font-bold font-space-grotesk text-[#2E7C67] text-center">
-          Thanks for getting to know me! I would love to get to know you. Let's connect!
+          Thanks for getting to know me! Let's connect!
         </h2>
 
         {/* Social Icons */}
@@ -48,9 +48,9 @@ function Contact() {
 
       <div className="Form-header mt-6">
         <h2 className="text-2xl font-bold font-space-grotesk text-[#2E7C67] text-center mb-4">
-          Fill out this form to leave feedback on this website and portfolio pieces!
+          Fill out this form to leave feedback on this website!
         </h2>
-        <div className="flex justify-center">
+        <div className="flex justify-center pb-6">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSffe-JmS45EH59LnDk3d157ED08p6gXGQjLXf_R-TBHHWMAvA/viewform?usp=header"
             target="_blank"
