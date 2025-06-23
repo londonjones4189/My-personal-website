@@ -1,35 +1,19 @@
-import Card from './Card'; 
-import { Link } from 'react-router-dom';
-import pink from './photos/pinkbg.jpeg';
-import green from './photos/greenbg.jpeg';
+import { useNavigate } from 'react-router-dom';
+import Card from './Card';
 
-function Backup() {
-  const cardData = [
-    {
-      id: 1,
-      image: pink,
-      hl: 'Personal Website',
-      sh: 'Everything about me',
-      tags: ['React', 'TailwindCSS'],
-    },
-    {
-      id: 2,
-      image: green,
-      hl: 'Investment Stimulation',
-      sh: 'Practice creating portfolios without risk',
-      tags: ['AlphaVantage API', 'Java'],
-    },
-    {
-      id: 3,
-      image: pink,
-      hl: 'Summer in Sydney',
-      sh: 'Coming soon!',
-    },
-  ];
+function PortfolioTemp({ title, subtitle, cardData, type }) {
+  const navigate = useNavigate();
+
+
+  //this isnt working
+  const handleBackClick = () => {
+    // Go to Home ("/") and tell Home to scroll to Portfolios
+    navigate('/', { state: { scrollTo: 'Portfolios' } });
+  };
 
   return (
     <div className="relative min-h-screen">
-      {/* Back button positioned absolutely at top */}
+      {/* Back Button */}
       <div
         className="absolute z-10"
         style={{
@@ -39,31 +23,30 @@ function Backup() {
           left: '20px'
         }}
       >
-        <Link
-          to="/portfolios"
+        <button
+          onClick={handleBackClick}
           className="bg-[#2E7C67]/[0.17] !text-[#2E7C67] px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors duration-200 inline-block"
         >
           Back
-        </Link>
+        </button>
       </div>
 
-      {/* Container 1 - Centered horizontally but at top */}
+      {/* Main Content */}
       <div className="w-screen flex flex-col items-center pt-24">
-        {/* Title section */}
         <div className="text-center mb-12">
           <h1 className="text-[36px] font-bold font-space-grotesk text-[#D4A5A5] mb-8">
-            Developer Portfolio
+            {title}
           </h1>
           <div className="p-6 rounded-2xl">
             <h3 className="text-2xl font-bold text-center text-[#2E7C67]">
-              Thank you for visiting my portfolio!
+              {subtitle}
             </h3>
           </div>
         </div>
 
-        {/* Card List - Centered in a row */}
+        {/* Card List */}
         <div className="flex flex-row justify-center gap-6 flex-wrap">
-          {cardData.map((card, index) => (
+          {cardData.map((card) => (
             <Card
               key={card.id}
               id={card.id}
@@ -71,14 +54,14 @@ function Backup() {
               hl={card.hl}
               sh={card.sh}
               tags={card.tags}
+              github={card.github} 
+              type={type}
             />
           ))}
         </div>
       </div>
-      {/* End of Container 1 */}
     </div>
   );
 }
 
-export default Backup;
-
+export default PortfolioTemp;

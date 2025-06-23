@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './fonts.css';
+//fonts css does exisit just outside this folder i dont know why its dong this 
+import '../fonts.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Portfolios() {

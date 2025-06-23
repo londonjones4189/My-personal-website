@@ -1,4 +1,3 @@
-
 function Card(props) {
   const content = (
     <div className="flex flex-col w-72 min-h-[300px] border border-gray-300 rounded-lg overflow-hidden shadow-sm p-4">
@@ -6,7 +5,6 @@ function Card(props) {
       <div className="w-full h-36 rounded-lg overflow-hidden mb-4">
         <img src={props.image} className="w-full h-full object-cover" alt="card" />
       </div>
-
       {/* Content */}
       <div className="flex flex-col justify-between flex-grow">
         <h2 className="font-bold text-lg mb-2">{props.hl}</h2>
@@ -18,20 +16,30 @@ function Card(props) {
             </span>
           ))}
         </div>
+        {/* Show indication if not clickable */}
+        {!props.github && (
+          <p className="text-xs text-gray-400 mt-2">Repository coming soon</p>
+        )}
       </div>
     </div>
   );
 
-  return props.github ? (
+  // Only create a link if github URL exists and is not empty
+  const hasValidGithub = props.github && props.github.trim() !== '';
+  
+  return hasValidGithub ? (
     <a
       href={props.github}
       target="_blank"
       rel="noopener noreferrer"
+      className="hover:transform hover:scale-105 transition-transform duration-200"
     >
       {content}
     </a>
   ) : (
-    content // no link if github is not provided
+    <div className="cursor-default">
+      {content}
+    </div>
   );
 }
 

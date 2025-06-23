@@ -1,14 +1,14 @@
-import {Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import AboutMe from './AboutMe';
-import Portfolios from './Portfolios';
+import Portfolios from './Portfolio/Portfolios';
 import Ttl from './Ttl';
 import ResumeFilter from './ResumeFilter';
 import Contact from './Contact';
-import Developer from './Developer';
-import Written from './Written';
-import Design from './Design';
-import DeveloperDetail from './DeveloperDetail';
+import Developer from './Portfolio/Developer';
+import Written from './Portfolio/Written';
+import Design from './Portfolio/Design';
+import DeveloperDetail from './Portfolio/Temps/DeveloperDetail';
 
 function Home() {
   return (
@@ -37,14 +37,14 @@ function Home() {
 
 function App() {
   return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Developer" element={<Developer />} />
-        <Route path="/Developer/:id" element={<DeveloperDetail />} />
-        <Route path="/Written" element={<Written />} />
-        <Route path="/Design" element={<Design />} />
-        <Route path="*" element={<div>bug</div>} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Developer" element={<Developer />} />
+      <Route path="/Developer/:id" element={<DeveloperDetail />} />
+      <Route path="/Written" element={<Written />} />
+      <Route path="/Design" element={<Design />} />
+      <Route path="*" element={<div>bug</div>} />
+    </Routes>
   );
 }
 
