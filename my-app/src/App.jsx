@@ -10,11 +10,12 @@ import Written from './Portfolio/Written';
 import Design from './Portfolio/Design';
 import DeveloperDetail from './Portfolio/Temps/DeveloperDetail';
 
+
 function Home() {
   return (
-    <div className="min-h-screen bg-white text-black flex flex-col scroll-smooth">
+    <div className="min-h-screen bg-white text-black">
       <Header />
-      <main className="flex-1 px-8 mt-0">
+      <main className="px-8 lg:px-16 xl:px-24 mt-0 mx-auto w-full"> {/* Remove max-width, add more responsive padding */}
         <section id="AboutMe">
           <AboutMe />
         </section>

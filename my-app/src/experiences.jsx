@@ -31,7 +31,7 @@ export const experiences = [
     title: "Copywriter Co-op",
     location: "Boston, MA",
     startDate: "January 2025",
-    endDate: "June 2026",
+    endDate: "June 2025",
     tags: ["Book"],
     bullets: [
       "Lead copywriter for site experiences, event installations, and pop-ups for Bose x LISA global campaign",
