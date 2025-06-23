@@ -41,28 +41,30 @@ function ResumeFilter() {
         </div>
       </div>
 
-      <div className="resume-filter__results grid gap-4">
-        {filteredExperiences.map((exp, index) => (
-          <div 
-            key={index} 
-            className="resume-item bg-[#2E7C67]/[0.17] p-4 rounded-lg font-space-grotesk text-[#2E7C67]"
-          >
-            <div className="flex justify-between items-start mb-1">
-              <h3 className="text-[#D4A5A5] font-bold">{exp.company}</h3>
-              <p>{exp.startDate} - {exp.endDate}</p>
-            </div>
-            <div className="flex justify-between items-start mb-2">
-              <p>{exp.title}</p>
-              <p>{exp.location}</p>
-            </div>
-            <ul className="list-disc list-inside space-y-1">
-              {exp.bullets.map((bullet, i) => (
-                <li key={i}>{bullet}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="resume-filter__results flex flex-col gap-4 max-w-3xl mx-auto w-full">
+  {filteredExperiences.map((exp, index) => (
+    <div 
+      key={index} 
+      className="resume-item bg-[#2E7C67]/[0.17] p-4 rounded-lg font-space-grotesk text-[#2E7C67] min-h-[300px] flex flex-col justify-between w-full"
+    >
+      <div>
+        <div className="flex justify-between items-start mb-1">
+          <h3 className="text-[#D4A5A5] font-bold">{exp.company}</h3>
+          <p>{exp.startDate} - {exp.endDate}</p>
+        </div>
+        <div className="flex justify-between items-start mb-2">
+          <p>{exp.title}</p>
+          <p>{exp.location}</p>
+        </div>
+        <ul className="list-disc list-inside space-y-1">
+          {exp.bullets.map((bullet, i) => (
+            <li key={i}>{bullet}</li>
+          ))}
+        </ul>
       </div>
+    </div>
+  ))}
+</div>
     </div>
   );
 }
