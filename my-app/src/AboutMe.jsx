@@ -3,15 +3,19 @@ import './fonts.css';
 import mom from './photos/mom.jpeg';
 import lily from './photos/lily.jpeg';
 import tape from './photos/tape.png';
+import spike from './photos/spike.jpeg';
+
 
 function AboutMe() {
   const roles = ['Developer', 'Writer', 'Designer', 'Creative'];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
+  //how to expand vertical images to be hroizonatl so they are all the sma elength
   const photos = [
     [mom, 'On our way to see Laufey'],
-    [lily, 'Me and my BFF']
+    [lily, 'Me and my BFF'],
+    [spike, 'My precious baby'],
   ];
 
   useEffect(() => {
@@ -69,16 +73,19 @@ function AboutMe() {
             className="absolute top-[-20px] left-1/2 transform -translate-x-1/2 w-24 z-10"
           />
           {/* Polaroid Card */}
-          <div className="bg-white shadow-xl rounded-xl p-4 flex flex-col items-center relative z-0 h-full">
+      
+          <div className="bg-white shadow-xl rounded-xl p-4 flex flex-col items-center relative z-0">
+          <div className="w-full aspect-w-4 aspect-h-3 rounded-md overflow-hidden">
             <img
               src={photos[currentPhotoIndex][0]}
               alt="Polaroid"
-              className="w-full h-72 object-cover rounded-md"
+              className="w-full h-full object-cover"
             />
-            <p className="mt-4 text-center text-black font-delicious-handrawn text-lg">
-              {photos[currentPhotoIndex][1]}
-            </p>
           </div>
+          <p className="mt-4 text-center text-black font-delicious-handrawn text-lg">
+            {photos[currentPhotoIndex][1]}
+          </p>
+        </div>
         </div>
         {/* End of Section 3 */}
       </div>

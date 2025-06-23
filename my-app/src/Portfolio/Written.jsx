@@ -1,8 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 
 function Written() {
+  const navigate = useNavigate();
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="relative min-h-screen">
-      {/* Back Button - copied from PortfolioTemp */}
+      {/* Back Button */}
       <div
         className="absolute z-10"
         style={{
@@ -12,12 +18,12 @@ function Written() {
           left: '20px'
         }}
       >
-        <a
-          href="/Portfolios"
+        <button
+          onClick={handleBackClick}
           className="bg-[#2E7C67]/[0.17] !text-[#2E7C67] px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors duration-200 inline-block"
         >
           Back
-        </a>
+        </button>
       </div>
 
       {/* Main Content */}

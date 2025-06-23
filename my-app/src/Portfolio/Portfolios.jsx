@@ -40,7 +40,7 @@ function Portfolios() {
     <div className="max-w-3xl mx-auto px-4 md:px-8 lg:px-12 py-6">
       <div className="contact-header">
       <h1 className="text-[36px] font-bold font-space-grotesk text-[#D4A5A5] text-center">
-        Portfolio
+        Portfolios
       </h1>
       <h2 className="text-2xl font-bold font-space-grotesk text-[#2E7C67] text-center">
         Pick your flower

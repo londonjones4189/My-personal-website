@@ -41,7 +41,7 @@ function ResumeFilter() {
         </div>
       </div>
 
-      <div className="resume-filter__results flex flex-col gap-4 mx-auto w-full">
+      <div className="resume-filter__results flex flex-col gap-4 mx-auto w-full max-w-4xl ">
   {filteredExperiences.map((exp, index) => (
     <div 
       key={index} 

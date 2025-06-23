@@ -4,11 +4,8 @@ import Card from './Card';
 function PortfolioTemp({ title, subtitle, cardData, type }) {
   const navigate = useNavigate();
 
-
-  //this isnt working
   const handleBackClick = () => {
-    // Go to Home ("/") and tell Home to scroll to Portfolios
-    navigate('/', { state: { scrollTo: 'Portfolios' } });
+    navigate('/');
   };
 
   return (

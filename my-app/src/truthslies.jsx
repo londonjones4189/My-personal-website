@@ -35,7 +35,7 @@ export const lies= [
       },
 
       {
-        lie : "I can whisle", 
+        lie : "I love cotton candy", 
       },
   
 ]
