@@ -35,7 +35,7 @@ export const experiences = [
     tags: ["Book"],
     bullets: [
       "Lead copywriter for site experiences, event installations, and pop-ups for Bose x LISA global campaign",
-      "Played a key role in Bose’s first copy brand book defining its voice, tone, and messaging standards",
+      "Played a key role in Bose’s first copy brand book defining voice, tone, and messaging standards",
       "Partnered with designers and developers on promotional giveaway landing pages (e.g., UConn, Victor Solomon)"
     ]
   },
@@ -57,11 +57,11 @@ export const experiences = [
     title: "Teacher Assistant, CS 1200",
     location: "Boston, MA",
     startDate: "September 2024",
-    endDate: "Present",
+    endDate: "December 2024",
     tags: ["Labtop"],
     bullets: [
-      "Mentoring incoming freshmen, providing guidance and support for their career growth",
-      "Collaborating with professors to grade assignments, distribute coursework, and maintain three office hours per week to assist over 400 students with their coursework and professional challenges"
+        "Mentored first-year students, offering personalized guidance on academic paths and career development",
+        "Partnered with faculty to grade assignments, manage course materials, and held weekly office hours to support 400+ students with coursework and career-related concerns",
     ]
   },
   {

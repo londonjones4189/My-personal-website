@@ -24,8 +24,8 @@ function Developer() {
       id: 3,
       image: pink,
       hl: 'Summer in Sydney',
-      sh: 'Coming soon!',
-      tags: ['Coming Soon'],
+      sh: 'Follow-up service project',
+      tags: ['React', 'Tailwindcss'],
       // No GitHub URL
     },
   ];
